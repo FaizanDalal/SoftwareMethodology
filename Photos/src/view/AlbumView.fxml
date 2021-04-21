@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Michael Chiang (mtc166) Faizan Dalal (fsd15) -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlbumDisplayPageController">
+   <children>
+      <ListView fx:id="photoListView" layoutX="25.0" layoutY="112.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="104.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photos" />
+      <Button fx:id="addB" layoutX="66.0" layoutY="338.0" mnemonicParsing="false" onAction="#addButtonEvent" text="Add" />
+      <Button fx:id="deleteB" layoutX="133.0" layoutY="338.0" mnemonicParsing="false" onAction="#deleteButtonEvent" text="Delete" />
+      <Button fx:id="displayB" layoutX="269.0" layoutY="338.0" mnemonicParsing="false" onAction="#displayButtonEvent" text="Edit Tags" />
+      <ImageView fx:id="thumbnailImageView" fitHeight="109.0" fitWidth="160.0" layoutX="344.0" layoutY="121.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="380.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thumbnail" />
+      <Button fx:id="copyB" layoutX="386.0" layoutY="312.0" mnemonicParsing="false" onAction="#copyButtonEvent" text="Copy" />
+      <Button fx:id="moveB" layoutX="498.0" layoutY="312.0" mnemonicParsing="false" onAction="#moveButtonEvent" text="Move" />
+      <Button fx:id="slideshowB" layoutX="510.0" layoutY="163.0" mnemonicParsing="false" onAction="#slideshowButtonEvent" text="Slideshow" />
+      <Button fx:id="quitB" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#quitButtonEvent" text="Quit" />
+      <Button fx:id="logoutB" layoutX="521.0" layoutY="14.0" mnemonicParsing="false" onAction="#logoutButtonEvent" text="Logout" />
+      <TextField fx:id="destinationField" layoutX="386.0" layoutY="338.0" prefHeight="25.0" prefWidth="160.0" promptText=" Destination (Album Name)" />
+      <Button fx:id="backB" layoutX="274.0" layoutY="27.0" mnemonicParsing="false" onAction="#backButtonEvent" text="Back" />
+      <TextArea fx:id="captionField" layoutX="333.0" layoutY="236.0" prefHeight="66.0" prefWidth="183.0" />
+      <TextField fx:id="renameCopyField" layoutX="386.0" layoutY="363.0" prefHeight="25.0" prefWidth="160.0" promptText="Rename Copy" />
+      <TextField fx:id="renamePhotoField" layoutX="227.0" layoutY="112.0" prefHeight="25.0" prefWidth="111.0" />
+      <Button fx:id="renamePhotoB" layoutX="253.0" layoutY="151.0" mnemonicParsing="false" text="Rename" onAction="#renameButtonEvent"/>
+   </children>
+</AnchorPane>

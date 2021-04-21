@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Michael Chiang (mtc166) Faizan Dalal (fsd15) -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminPageController">
+   <children>
+      <ListView fx:id = "userListView" layoutX="60.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="133.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User List" />
+      <Button fx:id = "deleteB" layoutX="131.0" layoutY="315.0" mnemonicParsing="false" text="Delete" onAction="#deleteUserButtonEvent"/>
+      <TextField fx:id = "newUsername" layoutX="375.0" layoutY="151.0" />
+      <Text layoutX="427.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <Button fx:id = "addUserB" layoutX="420.0" layoutY="200.0" mnemonicParsing="false" text="Add User" onAction="#addUserButtonEvent"/>
+      <Button fx:id = "logoutB" layoutX="525.0" layoutY="19.0" mnemonicParsing="false" text="Logout" onAction="#logoutButtonEvent"/>
+      <Button fx:id = "quitB" layoutX="14.0" layoutY="19.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="69.0" text="Quit" onAction="#quitButtonEvent"/>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Michael Chiang (mtc166) Faizan Dalal (fsd15) -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchPageController">
+   <children>
+      <Text layoutX="286.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Search" />
+      <Text layoutX="22.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date Range" />
+      <DatePicker fx:id="startDate" layoutX="99.0" layoutY="59.0" prefHeight="26.0" prefWidth="134.0" />
+      <Text layoutX="234.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="to" />
+      <DatePicker fx:id="endDate" layoutX="248.0" layoutY="59.0" prefHeight="26.0" prefWidth="128.0" />
+      <Text layoutX="406.0" layoutY="77.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Type 1" />
+      <TextField fx:id="tagTypeField1" layoutX="473.0" layoutY="58.0" prefHeight="26.0" prefWidth="110.0" />
+      <Button fx:id="searchB" layoutX="214.0" layoutY="89.0" mnemonicParsing="false" onAction="#searchButtonEvent" text="Search" />
+      <Button fx:id="createAlbumB" layoutX="484.0" layoutY="324.0" mnemonicParsing="false" onAction="#createAlbumButtonEvent" text="Create Album" />
+      <ListView fx:id="resultsListView" layoutX="47.0" layoutY="155.0" prefHeight="204.0" prefWidth="317.0" />
+      <Text layoutX="178.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results" />
+      <Button fx:id="quitB" layoutX="14.0" layoutY="15.0" mnemonicParsing="false" onAction="#quitButtonEvent" text="Quit" />
+      <Button fx:id="logoutB" layoutX="534.0" layoutY="15.0" mnemonicParsing="false" onAction="#logoutButtonEvent" text="Logout" />
+      <Button fx:id="backB" layoutX="278.0" layoutY="372.0" mnemonicParsing="false" onAction="#backButtonEvent" text="Back" />
+      <ImageView fx:id="resultImageView" fitHeight="100.0" fitWidth="110.0" layoutX="364.0" layoutY="249.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField fx:id="tagValueField1" layoutX="473.0" layoutY="101.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField fx:id="tagTypeField2" layoutX="473.0" layoutY="142.0" prefHeight="26.0" prefWidth="110.0" promptText="Optional" />
+      <TextField fx:id="tagValueField2" layoutX="473.0" layoutY="180.0" prefHeight="26.0" prefWidth="110.0" promptText="Optional" />
+      <Text layoutX="406.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Value 1" />
+      <Text layoutX="406.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Type 2" />
+      <Text layoutX="406.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tag Value 2" />
+      <Button fx:id="andB" layoutX="485.0" layoutY="245.0" mnemonicParsing="false" onAction="#andSearchButtonEvent" text="And" />
+      <Button fx:id="orB" layoutX="534.0" layoutY="245.0" mnemonicParsing="false" onAction="#orSearchButtonEvent" prefHeight="25.0" prefWidth="38.0" text="Or" />
+      <Button fx:id="singleSearchB" layoutX="485.0" layoutY="213.0" mnemonicParsing="false" onAction="#singleSearchButtonEvent" text="Single Search" />
+      <TextField fx:id="newAlbumNameTextField" layoutX="468.0" layoutY="360.0" prefHeight="25.0" prefWidth="118.0" promptText="New Album Name" />
+   </children>
+</AnchorPane>

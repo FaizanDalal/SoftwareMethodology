@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Michael Chiang (mtc166) Faizan Dalal (fsd15) -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginPageController">
+   <children>
+      <TextField fx:id="usernameField" layoutX="217.0" layoutY="187.0" />
+      <Text layoutX="269.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" />
+      <Button fx:id="loginB" layoutX="271.0" layoutY="229.0" mnemonicParsing="false" text="Login" onAction="#loginButtonEvent"/>
+      <Button fx:id="quitB" layoutX="527.0" layoutY="14.0" mnemonicParsing="false" text="Quit" onAction="#quitButtonEvent"/>
+   </children>
+</AnchorPane>

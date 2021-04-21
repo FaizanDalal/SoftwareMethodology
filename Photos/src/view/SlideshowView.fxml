@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Michael Chiang (mtc166) Faizan Dalal (fsd15) -->
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SlideshowPageController">
+   <children>
+      <Text layoutX="269.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Slideshow" />
+      <ImageView fx:id="photoDisplayImageView" fitHeight="235.0" fitWidth="399.0" layoutX="104.0" layoutY="83.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="rightB" layoutX="527.0" layoutY="187.0" mnemonicParsing="false" onAction="#rightButtonEvent" text="-&gt;" />
+      <Button fx:id="leftB" layoutX="22.0" layoutY="187.0" mnemonicParsing="false" onAction="#leftButtonEvent" text="&lt;-" />
+      <Button fx:id="quitB" layoutX="22.0" layoutY="18.0" mnemonicParsing="false" onAction="#quitButtonEvent" text="Quit" />
+      <Button fx:id="logoutB" layoutX="531.0" layoutY="18.0" mnemonicParsing="false" onAction="#logoutButtonEvent" text="Logout" />
+      <Button fx:id="backB" layoutX="278.0" layoutY="361.0" mnemonicParsing="false" onAction="#backButtonEvent" text="Back" />
+   </children>
+</AnchorPane>
